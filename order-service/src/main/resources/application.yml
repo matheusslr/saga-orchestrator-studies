@@ -2,6 +2,20 @@ server:
   port: 3000
 
 spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic:
+      start-saga: start-saga
+      notify-ending: notify-ending
+    consumer:
+      group-id: order-group
+      auto-offset-reset: latest
   datasource:
     database: admin
     uri: mongodb://root:password@localhost:27017
+
+logging:
+  level:
+    org:
+      apache:
+        kafka: OFF
