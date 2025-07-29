@@ -1,2 +1,7 @@
 server:
   port: 3000
+
+spring:
+  datasource:
+    database: admin
+    uri: mongodb://root:password@localhost:27017
