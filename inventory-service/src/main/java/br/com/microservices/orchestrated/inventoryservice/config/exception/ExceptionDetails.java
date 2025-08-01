@@ -1,4 +1,4 @@
-package br.com.microservices.orchestrated.inventoryservice.config.kafka.exception;
+package br.com.microservices.orchestrated.inventoryservice.config.exception;
 
 import lombok.Builder;
 

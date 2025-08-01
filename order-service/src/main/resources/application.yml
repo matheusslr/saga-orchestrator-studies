@@ -10,9 +10,9 @@ spring:
     consumer:
       group-id: order-group
       auto-offset-reset: latest
-  datasource:
-    database: admin
-    uri: mongodb://root:password@localhost:27017
+  data:
+    mongodb:
+      uri: mongodb://admin:password@localhost:27017/admin?authSource=admin
 
 logging:
   level:
